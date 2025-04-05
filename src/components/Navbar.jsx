@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 
 function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false); 
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen); 
+    setMenuOpen(!menuOpen);
   };
 
   return (
@@ -18,16 +18,17 @@ function Navbar() {
             </div>
             <ul className={`nav-link ${menuOpen ? 'active' : ''}`}>
               <li>
-                <a href="/support">Support</a>
+               
+                <a href="/Dogcareweb-app-new/support">Support</a> 
               </li>
               <li>
-                <a href="/hundar">Hundar</a>
+                <a href="/Dogcareweb-app-new/hundar">Hundar</a>
               </li>
               <li>
-                <a href="/adminpanel">Adminpanel</a>
+                <a href="/Dogcareweb-app-new/adminpanel">Adminpanel</a>
               </li>
               <li>
-                <a href="/loggaut">Logga ut</a>
+                <a href="/Dogcareweb-app-new/loggaut">Logga ut</a>
               </li>
             </ul>
             <div className="icon" onClick={toggleMenu}>
@@ -40,7 +41,7 @@ function Navbar() {
       <section>
         <div className="container">
           <div className="content">
-            <h2>Responsive panel</h2>
+            <h2></h2>
           </div>
         </div>
       </section>

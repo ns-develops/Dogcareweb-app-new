@@ -1,0 +1,21 @@
+
+.support-page {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start; 
+  height: 100vh;        
+  background-color: #f8f9fa;
+  text-align: center;   
+  padding: 40px 20px;      
+}
+
+.support-page h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.support-page p {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 10px 0;
+}
