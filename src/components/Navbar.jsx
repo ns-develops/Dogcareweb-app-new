@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
+import { Link } from 'react-router-dom';  
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,17 +19,16 @@ function Navbar() {
             </div>
             <ul className={`nav-link ${menuOpen ? 'active' : ''}`}>
               <li>
-               
-                <a href="/Dogcareweb-app-new/support">Support</a> 
+                <Link to="/support">Support</Link> 
               </li>
               <li>
-                <a href="/Dogcareweb-app-new/hundar">Hundar</a>
+                <Link to="/hundar">Hundar</Link>
               </li>
               <li>
-                <a href="/Dogcareweb-app-new/adminpanel">Adminpanel</a>
+                <Link to="/adminpanel">Adminpanel</Link>
               </li>
               <li>
-                <a href="/Dogcareweb-app-new/loggaut">Logga ut</a>
+                <Link to="/loggaut">Logga ut</Link>
               </li>
             </ul>
             <div className="icon" onClick={toggleMenu}>
