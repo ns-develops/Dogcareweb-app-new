@@ -32,7 +32,7 @@ function Navbar() {
                 <Link to="/adminpanel">Adminpanel</Link>
               </li>
               <li>
-                <Link to="/loggaut">Logga ut</Link>
+                <Link to="/loggain">Logga ut</Link>
               </li>
             </ul>
             <div className="icon" onClick={toggleMenu}>

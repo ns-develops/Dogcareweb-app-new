@@ -9,6 +9,7 @@ import InhouseHundar from './pages/InhouseHundar';
 import HundarCheckedOut from './pages/HundarCheckedOut'; 
 import AdderaHund from './pages/AdderaHund';
 import HundDetaljer from './pages/HundDetaljer';
+import LoggaIn from './pages/LoggaIn';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/adminpanel" element={<Adminpanel />} />
         <Route path="/hundar/addera" element={<AdderaHund />} /> 
         <Route path="/dog/:chipNumber" element={<HundDetaljer />} />
+        <Route path="/loggain" element={<LoggaIn />} /> 
       </Routes>
     </Router>
   );
