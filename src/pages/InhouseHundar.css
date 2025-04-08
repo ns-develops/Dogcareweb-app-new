@@ -13,40 +13,41 @@
 }
 
 .dogs-gallery card {
-  border: 2px solid #fff; 
+  border: 2px solid #fff;
   border-radius: 8px;
   overflow: hidden;
-  text-align: center;
-  background-color: #f5f5f5; 
+  text-align: left; /* Texten kommer vara vänsterjusterad */
+  background-color: #f5f5f5;
 }
 
 .dogs-gallery img {
-  height: 200px; 
-  width: 100%; 
-  object-fit: cover; 
-  border-radius: 8px; 
-  padding: 25px; 
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  padding: 25px;
 }
 
 .dogs-gallery article {
-  border: 2px solid #f5f5f5; 
+  border: 2px solid #f5f5f5;
   border-radius: 8px;
-  overflow: hidden; 
-  transition: transform 0.3s ease; 
-  background-color: #f5f5f5; 
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  background-color: #f5f5f5;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .dogs-gallery article:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 .dogs-gallery h3 {
   font-size: 12px;
+  text-align: left; /* Justera texten till vänster */
 }
 
 .main-content {
   background-color: #f8f9fa;
   min-height: 100vh;
-  padding-top: 20px; 
+  padding-top: 20px;
 }
