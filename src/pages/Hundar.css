@@ -1,38 +1,40 @@
 .hundar-container {
     display: flex;
-    justify-content: center; 
-    align-items: flex-start;  
-    height: 100vh;            
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
     background-color: #f8f9fa;
-    padding-top: 50px;      
+    padding-top: 50px;
   }
   
   .button-container {
-    display: grid;                  
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px;                       
-    justify-items: center;        
-    align-items: center;             
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px; 
+    justify-items: center;
+    align-items: center;
+    width: 50%; 
   }
   
   .hundar-btn {
-    background-color: #212a3c;  
-    color: white;              
-    font-size: 1.5rem;     
-    width: 200px;        
-    height: 200px;            
+    background-color: #212a3c;
+    color: white;
+    font-size: 1.5rem;
+    width: 200px;
+    height: 200px;
     display: flex;
-    justify-content: center;   
-    align-items: center;       
-    border: none;              
-    border-radius: 10px;       
-    cursor: pointer;           
-    transition: background-color 0.3s ease; 
-    text-align: center;   
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
   }
   
   .hundar-btn:hover {
-    background-color: #ecf0f1;  
-    color: #212a3c;             
+    background-color: #ecf0f1;
+    color: #212a3c;
   }
   
