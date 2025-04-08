@@ -19,7 +19,6 @@ function Navbar() {
           <nav>
             <div className="logo">
               <h2>Happy Dogo</h2>
-              {/* Add the paw image next to Happy Dogo */}
               <img src={pawImage} alt="Paw Icon" className="paw-icon" />
             </div>
             <ul className={`nav-link ${menuOpen ? 'active' : ''}`}>

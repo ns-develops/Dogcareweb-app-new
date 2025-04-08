@@ -8,6 +8,7 @@ import Adminpanel from './pages/Adminpanel';
 import InhouseHundar from './pages/InhouseHundar';
 import HundarCheckedOut from './pages/HundarCheckedOut'; 
 import AdderaHund from './pages/AdderaHund';
+import HundDetaljer from './pages/HundDetaljer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/hundar/checkedout" element={<HundarCheckedOut />} /> 
         <Route path="/adminpanel" element={<Adminpanel />} />
         <Route path="/hundar/addera" element={<AdderaHund />} /> 
+        <Route path="/dog/:chipNumber" element={<HundDetaljer />} />
       </Routes>
     </Router>
   );
