@@ -10,7 +10,7 @@ function AdderaHund() {
     sex: '',
     chipNumber: '',
     present: true, 
-    img: '',
+    img: '',  // Will store the image file
   });
 
   const [isInHouse, setIsInHouse] = useState(true); 
@@ -24,18 +24,30 @@ function AdderaHund() {
     });
   };
 
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setNewDog({
+          ...newDog,
+          img: reader.result,  // Store the image file as a data URL
+        });
+      };
+      reader.readAsDataURL(file);  // Convert image file to data URL
+    }
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     
-
     const dogToAdd = {
       ...newDog,
       present: isInHouse,
     };
 
     console.log('Dog added:', dogToAdd); 
-
     navigate('/hundar/allahundarna'); 
   };
 
@@ -109,17 +121,24 @@ function AdderaHund() {
         </div>
 
         <div className="form-group">
-          <label htmlFor="img">Bild (URL):</label>
+          <label htmlFor="img">Välj bild:</label>
           <input
-            type="text"
+            type="file"
             id="img"
             name="img"
-            placeholder="Lägg till en bild (URL)"
-            value={newDog.img}
-            onChange={handleInputChange}
+            accept="image/*"  // Allow only image files
+            onChange={handleFileChange}
             required
           />
         </div>
+
+        {/* Image Preview */}
+        {newDog.img && (
+          <div className="image-preview">
+            <h3>Bildförhandsvisning:</h3>
+            <img src={newDog.img} alt="Hundbild" className="preview-img" />
+          </div>
+        )}
 
         <div className="form-group">
           <label>Status:</label>
