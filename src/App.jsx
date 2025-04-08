@@ -7,6 +7,7 @@ import Support from './pages/Support';
 import Adminpanel from './pages/Adminpanel';
 import InhouseHundar from './pages/InhouseHundar';
 import HundarCheckedOut from './pages/HundarCheckedOut'; 
+import AdderaHund from './pages/AdderaHund';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/hundar/inhouse" element={<InhouseHundar />} />
         <Route path="/hundar/checkedout" element={<HundarCheckedOut />} /> 
         <Route path="/adminpanel" element={<Adminpanel />} />
+        <Route path="/hundar/addera" element={<AdderaHund />} /> 
       </Routes>
     </Router>
   );

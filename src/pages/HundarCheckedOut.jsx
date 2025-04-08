@@ -21,7 +21,7 @@ function HundarCheckedOut() {
   return (
     <div className="main-content">
       <div className="dog-list-container">
-        <h2 className="text-center text-3xl font-bold mb-8">Hundar Checked Out</h2>
+        <h2 className="text-center text-3xl font-bold mb-8"></h2>
         <div className="dogs-gallery">
           {dogs.length === 0 ? (
             <h1>Laddar...</h1>

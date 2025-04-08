@@ -1,0 +1,98 @@
+body {
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .addera-hund-container {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    flex-direction: column;
+    height: auto;
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-top: 0; /
+  }
+  
+  .addera-hund-container h2 {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .addera-hund-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto; 
+  }
+  
+  .addera-hund-form .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .addera-hund-form label {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  .addera-hund-form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .addera-hund-form .form-group input[type="radio"] {
+    width: auto;
+  }
+  
+  .addera-hund-form button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #212a3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 0rem;
+  }
+  
+  .addera-hund-form button:hover {
+    background-color: #1c2231;
+  }
+  
+  .addera-hund-form input:focus {
+    outline: none;
+    border-color: #212a3c;
+  }
+  
+  .addera-hund-form input::placeholder {
+    color: #aaa;
+  }
+  
+  .addera-hund-form .form-group div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .addera-hund-form .form-group div label {
+    display: inline-block;
+  }
+  
+  .addera-hund-form .form-group div input {
+    margin-right: 5px;
+  }
+  
