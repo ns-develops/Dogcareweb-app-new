@@ -20,33 +20,26 @@ function Adminpanel() {
     });
   };
 
-
   const generateUniqueId = () => {
     const timestamp = Date.now();
     const randomPart = Math.floor(Math.random() * 1000); 
     return `org-${timestamp}-${randomPart}`;
   };
 
- 
   const handleSubmit = (e) => {
     e.preventDefault();
 
- 
     const newId = generateUniqueId();
 
-  
     setFormData({
       ...formData,
       id: newId, 
     });
 
-
     console.log('New Organization Info:', {
       ...formData,
       id: newId,
     });
-
-   
   };
 
   return (
@@ -110,6 +103,13 @@ function Adminpanel() {
 
           <button type="submit">Spara</button>
         </form>
+      </div>
+
+      <div className="info-box">
+        <h3></h3>
+        <p><strong>ID:</strong> {formData.id || 'Genereras när du sparar'}</p>
+        <p><strong>Månadskostnad:</strong> 199:-/månad (System Basic)</p>
+        <p>Betalningen dras per autogiro</p>
       </div>
     </div>
   );

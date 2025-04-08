@@ -7,7 +7,7 @@ function LoggaIn() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Hantera inloggning här
+
   };
 
   return (

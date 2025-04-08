@@ -24,7 +24,7 @@ const HundDetaljer = () => {
     <div className='container'>
       <Link to="/" className="back-link">Tillbaka</Link>
       {!dog ? (
-        <h1 className="text-center">Laddar...</h1>
+        <h1>Laddar...</h1>
       ) : (
         <article className="border border-blue-500 p-5 rounded my-10">
           <img src={dog.img} loading="lazy" style={{ height: '300px', width: '300px', objectFit: 'cover' }} className="rounded md:h-72 w-full object-cover" alt={`Dog: ${dog.name}`} />
