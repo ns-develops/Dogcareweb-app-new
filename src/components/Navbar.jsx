@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
-import { Link } from 'react-router-dom';  
+import { Link } from 'react-router-dom';
+import pawImage from '../assets/paw.png';  
+
+import './Navbar.css';
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,6 +19,8 @@ function Navbar() {
           <nav>
             <div className="logo">
               <h2>Happy Dogo</h2>
+              {/* Add the paw image next to Happy Dogo */}
+              <img src={pawImage} alt="Paw Icon" className="paw-icon" />
             </div>
             <ul className={`nav-link ${menuOpen ? 'active' : ''}`}>
               <li>

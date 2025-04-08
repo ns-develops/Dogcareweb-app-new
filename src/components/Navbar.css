@@ -1,0 +1,16 @@
+.logo {
+    display: flex;
+    align-items: center; 
+  }
+  
+  .logo h2 {
+    margin-right: 10px; 
+    font-size: 2rem;
+  }
+  
+  .paw-icon {
+    width: 30px; 
+    height: auto; 
+    margin-left: 10px; 
+  }
+  

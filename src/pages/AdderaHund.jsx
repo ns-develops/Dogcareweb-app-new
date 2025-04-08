@@ -10,7 +10,7 @@ function AdderaHund() {
     sex: '',
     chipNumber: '',
     present: true, 
-    img: '',  // Will store the image file
+    img: '', 
   });
 
   const [isInHouse, setIsInHouse] = useState(true); 
@@ -32,10 +32,10 @@ function AdderaHund() {
       reader.onloadend = () => {
         setNewDog({
           ...newDog,
-          img: reader.result,  // Store the image file as a data URL
+          img: reader.result,  
         });
       };
-      reader.readAsDataURL(file);  // Convert image file to data URL
+      reader.readAsDataURL(file);  
     }
   };
 
