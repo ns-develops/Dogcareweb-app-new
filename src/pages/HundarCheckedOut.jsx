@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './InhouseHundar.css';
+import './HundarCheckedOut.css';
 
-function InhouseHundar() {
+function HundarCheckedOut() {
   const [dogs, setDogs] = useState([]);
 
   useEffect(() => {
@@ -10,19 +10,18 @@ function InhouseHundar() {
       try {
         const res = await fetch("https://api.jsonbin.io/v3/b/66f3d48dacd3cb34a88b303f");
         const data = await res.json();
-        const inhouseDogs = data.record.filter(dog => dog.present);
-        setDogs(inhouseDogs);
+        setDogs(data.record.filter(dog => !dog.present));
       } catch (error) {
         console.error(error);
       }
     };
     fetchDogData();
-  }, []);
+  }, []); 
 
   return (
     <div className="main-content">
       <div className="dog-list-container">
-        <h2 className="text-center text-3xl font-bold mb-8">Hundar Inhouse</h2>
+        <h2 className="text-center text-3xl font-bold mb-8">Hundar Checked Out</h2>
         <div className="dogs-gallery">
           {dogs.length === 0 ? (
             <h1>Laddar...</h1>
@@ -43,7 +42,7 @@ function InhouseHundar() {
                       <h3>Age: {dog.age}</h3>
                       <h3>Sex: {dog.sex}</h3>
                       <h3>Breed: {dog.breed}</h3>
-                      <h3 className="text-green-600">Current: This dog is present.</h3>
+                      <h3 className="text-red-600">Current: This dog is not present.</h3>
                     </article>
                   </Link>
                 ))}
@@ -56,4 +55,4 @@ function InhouseHundar() {
   );
 }
 
-export default InhouseHundar;
+export default HundarCheckedOut;

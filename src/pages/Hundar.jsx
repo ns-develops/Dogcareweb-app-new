@@ -1,3 +1,4 @@
+// Hundar.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Hundar.css';
@@ -12,7 +13,9 @@ function Hundar() {
         <Link to="/hundar/inhouse">
           <button className="hundar-btn">Hundar Inhouse</button>
         </Link>
-        <button className="hundar-btn">Hundar Checked Out</button>
+        <Link to="/hundar/checkedout">
+          <button className="hundar-btn">Hundar Checked Out</button>
+        </Link>
         <button className="hundar-btn">Tidigare Hundar</button>
       </div>
     </div>
