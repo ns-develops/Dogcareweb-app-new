@@ -5,15 +5,18 @@ import Hundar from './pages/Hundar';
 import Allahundar from './pages/Allahundar'; 
 import Support from './pages/Support';
 import Adminpanel from './pages/Adminpanel';
+import InhouseHundar from './pages/InhouseHundar';
 
 function App() {
   return (
     <Router basename="/Dogcareweb-app-new">
       <Navbar />
       <Routes>
+      <Route path="/" element={<Hundar />} />
         <Route path="/support" element={<Support />} />
         <Route path="/hundar" element={<Hundar />} /> 
         <Route path="/hundar/allahundarna" element={<Allahundar />} />
+        <Route path="/hundar/inhouse" element={<InhouseHundar />} />
         <Route path="/adminpanel" element={<Adminpanel />} />
       </Routes>
     </Router>

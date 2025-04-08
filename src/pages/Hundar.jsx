@@ -9,7 +9,9 @@ function Hundar() {
         <Link to="/hundar/allahundarna">
           <button className="hundar-btn">Alla hundarna</button>
         </Link>
-        <button className="hundar-btn">Hundar Inhouse</button>
+        <Link to="/hundar/inhouse">
+          <button className="hundar-btn">Hundar Inhouse</button>
+        </Link>
         <button className="hundar-btn">Hundar Checked Out</button>
         <button className="hundar-btn">Tidigare Hundar</button>
       </div>
