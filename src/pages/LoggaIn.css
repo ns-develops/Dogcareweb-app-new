@@ -1,3 +1,12 @@
+/* För att säkerställa att hela sidan täcks */
+html, body {
+    height: 100%; /* Gör att body och html täcker hela höjden av sidan */
+    margin: 0; /* Tar bort eventuell marginal som kan påverka layouten */
+    background-color: #f8f9fa; /* Sätt bakgrundsfärgen på hela sidan */
+    font-family: Arial, sans-serif; /* Valfri font */
+}
+
+/* För inloggningscontainern */
 .login-container {
     width: 100%;
     max-width: 400px;
@@ -5,27 +14,27 @@
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    background-color: #f9f9f9;
-  }
-  
-  h2 {
+    background-color: #ffffff; /* Håll inloggningscontainern vit */
+}
+
+h2 {
     text-align: center;
-  }
-  
-  label {
+}
+
+label {
     display: block;
     margin-bottom: 8px;
-  }
-  
-  input {
+}
+
+input {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-  }
-  
-  button {
+}
+
+button {
     width: 100%;
     padding: 10px;
     background-color: #212a3c;
@@ -33,16 +42,15 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #212a3c;
-  }
-  
-  a {
+}
+
+a {
     display: block;
     text-align: center;
     margin-top: 10px;
     color: #007BFF;
-  }
-  
+}
